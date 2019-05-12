@@ -92,7 +92,19 @@
         },
         textComment: {
           '0': ['2019 Our little trips'],
-          '44': ['Happy Birthday ', 'Yu Tung ']
+          '1': ['2019/01/01', ' - 永春崗'],
+          '2': ['2019/01/05', ' - 十分'],
+          '6': ['2019/01/12', ' - 大同山登山步道'],
+          '9': ['2019/02/02', ' - 北海岸'],
+          '16': ['2019/02/16', ' - 台北燈節'],
+          '19': ['2019/02/28 - 2019/03/02', ' - 台中'],
+          '25': ['2019/03/16', ' - 內湖金面山'],
+          '28': ['2019/04/04', ' - 草山夜未眠'],
+          '31': ['2019/04/20', ' - 南港 City Link'],
+          '33': ['2019/04/27', ' - 魚路古道'],
+          '37': ['2019/05/04', ' - 五股桐花公園步道'],
+          '40': ['2019/05/11', ' - 新莊體育館'],
+          '44': ['Happy Birthday, 昱同']
         },
         currentPage: 0
       },
@@ -105,8 +117,9 @@
             birthdayTms = 1558828800,
             dataIndex = e.target.dataset['index'];
 
-          if (classList.indexOf('img-item') >= 0 && classList.indexOf('next') < 0) {
-            if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
+          // if (classList.indexOf('img-item') >= 0 && classList.indexOf('next') < 0) {
+          if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
+            if (dataIndex == this.images.length - 1) {
               resetPrePages(dataIndex, 'back');
               this.currentPage = 0;
             } else {

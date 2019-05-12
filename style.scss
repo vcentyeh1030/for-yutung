@@ -72,7 +72,7 @@ body {
       align-items: center;
       overflow: hidden;
       border-radius: 10px;
-      box-shadow: 2px 2px 2px rgba(50%, 50%, 40%, 0.6);
+      box-shadow: 3px 0px 5px rgba(50%, 50%, 40%, 0.6);
       cursor: grab;
       &:active {
         cursor: grabbing;
@@ -95,10 +95,13 @@ body {
         visibility: visible;
       }
       .comment {
+        flex: 0.5;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        font-size: 17px;
         span {
-          font-size: 30px;
+          margin-bottom: 10px;
         }
       }
     }
