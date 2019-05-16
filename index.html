@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>2019 Our little trips</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.min.css">
-
 </head>
 
 <body>
@@ -91,8 +91,8 @@
           '1': 'filter-graysale'
         },
         textComment: {
-          '0': ['2019 Our little trips'],
-          '1': ['2019/01/01', ' - 永春崗'],
+          '0': ['2019 Our little trips', 'Familiar acts are beautiful through love.'],
+          '1': ['2019/01/01', ' - 跨年，永春崗'],
           '2': ['2019/01/05', ' - 十分'],
           '3': [' ', ' ', ' - 貓'],
           '4': [' ', ' ', ' - 十分瀑布'],
@@ -115,8 +115,10 @@
           '22': [' ', ' ', ' - 台中國家歌劇院'],
           '23': [' ', ' ', ' - 台中花博'],
           '25': ['2019/03/16', ' - 內湖金面山'],
+          '27': [' ', ' ', ' - 林間小道'],
           '28': ['2019/04/04', ' - 草山夜未眠'],
           '29': [' ', ' ', ' - 台北市區夜景'],
+          '30': [' ', ' ', ' - 週年紀念'],
           '31': ['2019/04/20', ' - 南港 City Link'],
           '32': [' ', ' ', ' - 南港極限運動中心'],
           '33': ['2019/04/27', ' - 魚路古道'],
@@ -142,9 +144,9 @@
             birthdayTms = 1558828800,
             dataIndex = e.target.dataset['index'];
 
-          if (classList.indexOf('img-item') >= 0 && classList.indexOf('next') < 0) {
-            if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
-              // if (dataIndex == this.images.length - 1) {
+          // if (classList.indexOf('img-item') >= 0 && classList.indexOf('next') < 0) {
+          if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
+            if (dataIndex == this.images.length - 1) {
               resetPrePages(dataIndex, 'back');
               this.currentPage = 0;
             } else {
