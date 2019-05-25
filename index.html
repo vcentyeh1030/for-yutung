@@ -145,8 +145,8 @@
             dataIndex = e.target.dataset['index'];
 
           if (classList.indexOf('img-item') >= 0 && classList.indexOf('next') < 0) {
-            if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
-              // if (dataIndex == this.images.length - 1) {
+            //if (dataIndex == this.images.length - 1 || (currentDataTms <= birthdayTms && dataIndex == this.images.length - 2)) {
+            if (dataIndex == this.images.length - 1) {
               resetPrePages(dataIndex, 'back');
               this.currentPage = 0;
             } else {
